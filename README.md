@@ -38,18 +38,6 @@ php artisan db:seed
 
 ### 設計概略
 
-> Controller
-> ↓
-> Request
-> ↓
-> Service
-> ↓
-> Repository
-> ↓
-> Entity
-> ↓
-> Response
-> ↓
-> Controller
+> Controller→Request→Service→Repository→Entity→Response→Controller
 
 [changelog]: ./CHANGELOG.md
