@@ -1,6 +1,6 @@
 ## owned-media-admin-api について
 
-Laravel フレームワークを用いた
+Laravel フレームワークを用いた API 開発
 
 ### docker 立ち上げ
 
