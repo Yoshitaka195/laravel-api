@@ -1,6 +1,6 @@
 ## owned-media-admin-api について
 
-Laravel フレームワークを用いた
+Laravel フレームワークを用いた API 開発
 
 ### docker 立ち上げ
 
@@ -15,7 +15,7 @@ Laravel フレームワークを用いた
 ```
 cd application
 composer install
-``
+```
 
 ### laravel プロジェクトを抜ける
 
@@ -23,10 +23,9 @@ composer install
 
 ### laravel と mysql を接続する
 
-### application配下に.envを作成し、下記を編集
+### application 配下に.env を作成し、下記を編集
 
 ```
-
 // .env
 DB_CONNECTION=mysql
 DB_HOST=db
@@ -34,12 +33,13 @@ DB_PORT=3306
 DB_DATABASE=application
 DB_USERNAME=root
 DB_PASSWORD=root
-
 ```
 
-### migrate する
+### db データの作成
 
-`php artisan migrate`
+```
+php artisan migrate
+php artisan db:seed
+```
 
 [changelog]: ./CHANGELOG.md
-```
