@@ -35,9 +35,9 @@ services:
       MYSQL_PASSWORD: docker
       TZ: "Asia/Tokyo"
     volumes:
-      - ./initdb.d:/docker-entrypoint-initdb.d # コンテナ作成時に実行されるsqlファイルを格納するパスをdocker-entrypoint-initdb.dにマウント
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
+      - /var/lib/mysql
+      - /etc/mysql/conf.d/my.cnf
+      - /docker-entrypoint-initdb.d
     ports:
       - 3306:3306
     networks:
